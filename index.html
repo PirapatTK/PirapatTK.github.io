@@ -3,84 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java Script</title>
-    <script type="text/javascript">
-        while (true) {
-            let n = prompt("Enter a positive integer: ");
-            if (n > 0 && n % 1 == 0) {
-                showPrimes(n);
-                break;
-            }
-        }
-
-        function showPrimes(n) {
-            let primes = [];
-            for (let i = 2; i < n; i++) {
-                if (!isPrime(i)) continue;
-                primes.push(i);
-            }
-            alert("for n = " + n + ", prime number are " + primes.join(","));
-        }
-
-        function isPrime(n) {
-            for (let i = 2; i < n; i++) {
-                if (n % i == 0) return false;
-            }
-            return true;
-        }
-
-    </script>
-    <style>
-        h2 {
-            text-align: center;
-        }
-
-        h1 {
-            font-weight: 100;
-            font-family: serif;
-        }
-
-        li {
-            font-size: 18px;
-        }
-
-        .hint {
-            list-style: decimal;
-        }
-
-        @media only screen and (max-width: 375px) {
-            li {
-                font-size: 18px;
-            }
-
-            h1 {
-                font-size: 22px;
-            }
-        }
-
-        @media only screen and (min-width: 768px) {
-            li {
-                font-size: 22px;
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles/pirapat-style.css" type="text/css">
+    <title>Pirapat's example page</title>
 </head>
 
 <body>
-    <h2>Prime Numbers Finder!</h2>
-    <h1>Write the web app to prompt accepting for a positive integer number</h1>
+    <h1>WHAT IS A CAT</h1>
+    <img src="images/cat.jpeg" alt="cat image" width="90%">
+    <figure>
+        <img src="images/cat2.webp" alt="cat meme image" width="90%" >
+        <figcaption>cat in the meme cat and woman</figcaption>
+    </figure>
+    <p id="heading">what is a cat - The cat (Felis catus) is a domestic species of small carnivorous mammal.</p>
     <ul>
-        <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until
-            the valid positive integer is entered</li>
-        <li>If the entered text is a positive integer, then the app will print prime numbers that are not greater than that given positive integer</li>
+        <li class="popular">แมวเป็นสัตว์</li>
+        <li>แมว  เป็นสปีชีส์สัตว์เลี้ยงของสัตว์เลี้ยงลูกด้วยนมกินเนื้อขนาดเล็ก</li>
+        <li class="popular">แมวเป็นของเหลว</li>
     </ul>
-    <h1>Hint:</h1>
-    <ul>
-        <li class="hint">you may want to use loop with label</li>
-        <li class="hint">you may want to use array with push function</li>
-    </ul>
+    <p>that is all about cat more imfomation <a href="https://en.wikipedia.org/wiki/Cat" target="_blank">click here</a>
+    </p>
 </body>
 
 </html>
