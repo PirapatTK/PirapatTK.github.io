@@ -17,7 +17,7 @@
 
         function showPrimes(n) {
             let primes = [];
-            for (let i = 2; i < n; i++){
+            for (let i = 2; i < n; i++) {
                 if (!isPrime(i)) continue;
                 primes.push(i);
             }
@@ -25,7 +25,7 @@
         }
 
         function isPrime(n) {
-            for (let i = 2; i < n; i++){
+            for (let i = 2; i < n; i++) {
                 if (n % i == 0) return false;
             }
             return true;
@@ -36,6 +36,7 @@
         h2 {
             text-align: center;
         }
+
         h1 {
             font-weight: 100;
             font-family: serif;
@@ -55,8 +56,10 @@
     <h2>Prime Numbers Finder!</h2>
     <h1>Write the web app to prompt accepting for a positive integer number</h1>
     <ul>
-        <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until the valid positive integer is entered</li>
-        <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until the valid positive integer is entered</li>
+        <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until
+            the valid positive integer is entered</li>
+        <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until
+            the valid positive integer is entered</li>
     </ul>
     <h1>Hint:</h1>
     <ul>
