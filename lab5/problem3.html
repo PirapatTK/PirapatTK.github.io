@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Background Color Changer</title>
+  <style>
+    div {
+      background-color: blue;
+      height: 100px;
+      width: 25%;
+      float: left;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    for (let i = 1; i <= 16; i++) {
+      let myDiv = document.createElement("div");
+      document.body.appendChild(myDiv);
+    }
+    function random(number) {
+      return Math.floor(Math.random() * number);
+    }
+    function bgChange() {
+      let rndColor =
+        "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
+      return rndColor;
+    }
+    let divs = document.querySelectorAll("div");
+    let firstTime = true;
+    let firstColor = "";
+    for (var i = 0; i < divs.length; i++) {
+      if (i % 2 == 0) {
+        divs[i].onclick = function (e) {
+          e.target.style.backgroundColor = bgChange();
+        };
+      } else {
+        divs[i].onclick = function (e) {
+          firstTime
+            ? ((e.target.style.backgroundColor = bgChange()),
+              (firstColor = e.target.style.backgroundColor),
+              (firstTime = false))
+            : ((e.target.style.backgroundColor = firstColor),
+              (firstTime = false));
+        };
+      }
+    }
+  </script>
+</body>
+
+</html>

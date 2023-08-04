@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Oriented Programming</title>
+    <script>
+        function Song(title, artist) {
+            this.title = title;
+            this.artist = artist;
+        }
+
+        Song.prototype.play = function() {
+            console.log("Playing: " + this.title + ", Artist : " + this.artist);
+        };
+
+        const song1 = new Song("Anti Hero", "Taylor Swift");
+        const song2 = new Song("Memmories", "Maroon 5");
+
+        song1.play();
+        song2.play();
+    </script>
+    <style>
+        h1, p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Object-Oriented Programming</h1>
+    <p>Open the console to see the result</p>
+</body>
+</html>

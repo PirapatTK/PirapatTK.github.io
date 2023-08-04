@@ -1,0 +1,32 @@
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 100;
+    font-family: serif;
+}
+
+li {
+    font-size: 18px;
+}
+
+.hint {
+    list-style: decimal;
+}
+
+@media only screen and (max-width: 375px) {
+    li {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    li {
+        font-size: 22px;
+    }
+}
